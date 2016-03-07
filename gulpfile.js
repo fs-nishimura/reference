@@ -76,7 +76,7 @@ gulp.task('sprite_sp', function() {
 gulp.task('bs:dev', function() {
   $.browserSync({
     baseDir: "/html",
-    proxy: "namplate.localhost" // 任意のローカルホストを記載
+    proxy: "reference.localhost" // 任意のローカルホストを記載
   });
 });
 

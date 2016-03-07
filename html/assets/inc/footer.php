@@ -7,11 +7,11 @@
 	/////////////////////////////////////////////////////////////////////////////////////////////////////
 ?>
 
-<div class="totop">
+<!-- <div class="totop">
 	<a href="javascript:void(0);"><img src="/img/totop.png" alt="Totop" width="xxx" height="xxx"></a>
-</div>
+</div> -->
 <footer>
-	<nav>
+	<!-- <nav>
 		<ul class="fnav">
 			<li class="fnav_01"><a href="#"><img src="/img/fnav_01.png" alt="fnav_01" width="xxx" height="xxx"></a></li>
 			<li class="fnav_02"><a href="#"><img src="/img/fnav_02.png" alt="fnav_02" width="xxx" height="xxx"></a></li>
@@ -25,6 +25,6 @@
 			<li class="sns_tw"><a href="#" target="_blank"><img src="/img/ico-tw.png" alt="Twitter" width="xxx" height="xxx"></a></li>
 			<li class="sns_in"><a href="#" target="_blank"><img src="/img/ico-in.png" alt="Instagram" width="xxx" height="xxx"></a></li>
 		</ul>
-	</nav>
-	<div class="copyright"><img src="/img/copyright.png" alt="copyright"></div>
+	</nav> -->
+	<address>&copy; Naoko Nishimura</address>
 </footer>

@@ -16,7 +16,7 @@
 
 	// 個別設定
 	$page_class       = "page-home"; // ページクラスが必要な場合
-	$page_title       = "テンプレート"; // ページタイトル
+	$page_title       = "Naoko's Parts for Web development"; // ページタイトル
 	$page_keywords    = ""; // ページ特有のキーワードがある場合
 	$page_description = ""; // ページ特有のdescriptionがある場合
 
@@ -36,18 +36,75 @@
 		/////////////////////////////////////////////////////////////////////////////////////////////////////
 	?>
 	<div id="wrapAll">
-	<?php include ($root_path."/assets/inc/header.php"); ?>
-
 	<main>
-		<section id="Mainpic">
+		<section id="layout">
 			<div class="section-wrap">
-				表示テスト成功
+				<h3>Layout</h3>
+				<ul>
+				         	<li>
+		 				<a href="/layout/layout1"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Basic</a></h4>
+					</li>
+					 <li>
+						<a href="/layout/layout2"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Stylish</a></h4>
+					</li>
+					<li>
+						<a href="/layout/layout3"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="/layout/layout3">Formal</a></h4>
+					</li>
+					<li>
+						<a href="/layout/layout4"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="/layout/layout4">Formal</a></h4>
+					</li>
+					<li>
+						<a href="/layout/layout5"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="/layout/layout5">Formal</a></h4>
+					</li>
+					<li>
+						<a href="/layout/layout6"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="/layout/layout6">Formal</a></h4>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+		<section id="parts">
+			<div class="section-wrap">
+				<h3>Parts</h3>
+				<ul>
+				         	<li>
+		 				<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Mobile Menu (Flex) </a></h4>
+					</li>
+					 <li>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Mobile Menu (100%)</a></h4>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');">Main Slider</div></a>
+	              				<h4><a href="javascript:void(0);"></a></h4>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Three column footer</a></h4>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Html strip Php</a></h4>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Formal</a></h4>
+					</li>
+
+				</ul>
 			</div>
 		</section>
 	</main>
-
 	<?php include ($root_path."/assets/inc/footer.php"); ?>
 	</div>
+
 	<?php 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////
 		// ページ内容ここまで
@@ -57,26 +114,8 @@
 <?php else:  /////////// PCのみ?>
 <?php include ($root_path."/assets/inc/script.php"); ?>
 <?php endif;  /////////// PC・SP振り分け完了?>
-<script src="<?php echo $local_path; ?>/js/library/jquery.flexslider-min.js"></script>
 <script src="<?php echo $local_path; ?>/js/top.js"></script>
-<script type="text/javascript">
-$(window).load(function() {
-	$('.flexslider').flexslider({
-		animation: "slide",
-		controlsContainer: $(".ctrl"),
-	    	customDirectionNav: $("a.arr"),
-	    	easing:"easeInOutSine",
-	    	slideshowSpeed:10000,
-	    	animationSpeed:500
-	});
-	//スライドが一枚の時はDirection ArrowをRemove
-	if($("ul.slides li:not(.clone)").length==1){
-		$(".flex-direction-nav").remove();
-	}
-	//load時にずれるのでスタイル設定、-768pxにwidthを入れる
-	$("ul.slides").css("transform","translate3d(-768px, 0px, 0px)");
-});	
-</script>
+
 
 </body>
 </html>
