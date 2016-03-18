@@ -42,16 +42,122 @@
 				<h3>Layout</h3>
 				<ul>
 				         	<li>
-		 				<a href="/layout/layout1"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
+		 				<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/top/1.png');"></div></a>
 	              				<h4><a href="javascript:void(0);">Basic</a></h4>
+	              				<div class="modal">
+	              					<ul>
+	              						<li>
+	              							<h5>HTML</h5>
+
+	              							<p>
+	              							<textarea cols="50" rows="7" style="font-family:monospace">
+	              							<header></header>
+	              							<main><section class="section-wrap"></section></main>
+									<footer></footer>
+									</textarea>
+									</p>
+	              						</li>
+	              						<li>
+	              							<h5>SCSS</h5>
+	              							<p>
+	              							<textarea cols="50" rows="7" style="font-family:monospace">
+	              							header{
+	              							width:100%;
+	              							}
+	              							main{
+	              							width:100%;
+	              							.section-wrap{
+	              							min-width:1000px;
+	              							max-width:1300px;
+	              							}
+	              							}
+	              							footer{
+	              							width:100%;
+	              							}
+									</textarea>
+	              							</p>
+	              						</li>
+	              					</ul>
+	              				</div>
 					</li>
 					 <li>
-						<a href="/layout/layout2"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="javascript:void(0);">Stylish</a></h4>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/top/2.png');"></div></a>
+	              				<h4><a href="javascript:void(0);">Horizontal nav</a></h4>
+	              				<div class="modal">
+	              					<ul>
+	              						<li>
+	              							<h5>HTML</h5>
+	              							<p>
+	              							<textarea cols="50" rows="7" style="font-family:monospace">
+	              							<header></header>
+	              							<main><section class="section-wrap"></section></main>
+									</textarea>
+									</p>
+	              						</li>
+	              						<li>
+	              							<h5>SCSS</h5>
+	              							<p>
+	              							<textarea cols="50" rows="7" style="font-family:monospace">
+	              							header{
+	              							width:100px;//change here
+	              							height:100%;//change here
+	              							position:absolute;
+	              							top:0;
+	              							left:0;
+	              							}
+	              							main{
+	              							width:100%;
+	              							height:100%;
+	              							@extend .clearfix;
+	              							.section-wrap{
+	              							width:900px;
+	              							float:right;
+	              							}
+	              							}
+									</textarea>
+	              							</p>
+	              						</li>
+	              					</ul>
+	              				</div>
 					</li>
 					<li>
-						<a href="/layout/layout3"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="/layout/layout3">Formal</a></h4>
+						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/top/3.png');"></div></a>
+	              				<h4><a href="/layout/layout3">Fullscreen</a></h4>
+	              				<div class="modal">
+	              					<ul>
+	              						<li>
+	              							<h5>HTML</h5>
+	              							<p>
+	              							<textarea cols="50" rows="7" style="font-family:monospace">
+	              							<header></header>
+	              							<main><section class="section-wrap"></section></main>
+									</textarea>
+									</p>
+	              						</li>
+	              						<li>
+	              							<h5>SCSS</h5>
+	              							<p>
+	              							<textarea cols="50" rows="7" style="font-family:monospace">
+	              							header{
+	              							width:100px;//change here
+	              							height:100%;//change here
+	              							position:fixed;
+	              							top:0;
+	              							left:0;
+	              							}
+	              							main{
+	              							width:100%;
+	              							height:100%;
+	              							@extend .clearfix;
+	              							.section-wrap{
+	              							width:100%;
+	              							}
+	              							}
+									</textarea>
+	              							</p>
+	              						</li>
+	              					</ul>
+	              				</div>
 					</li>
 					<li>
 						<a href="/layout/layout4"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
