@@ -13,7 +13,7 @@ var scroll;
 // Events
 ////////////////////////////////////////////////////////////////
 document.addEventListener('DOMContentLoaded',function(){
-	fallbackSvg();	
+	// fallbackSvg();	
 });
 window.addEventListener('load',function(){
 	$('body').addClass('load');
@@ -29,15 +29,15 @@ window.addEventListener('scroll',function(){
 ////////////////////////////////////////////////////////////////
 // functions
 ////////////////////////////////////////////////////////////////
-function fallbackSvg(){
-	$(function(){
-	  if (!Modernizr.svg){
-	    $('img').each(function() {
-	      $(this).attr('src', $(this).attr('src').replace(/\.svg/gi,'.png'));
-	    });
-	  }
-	});
-}
+// function fallbackSvg(){
+// 	$(function(){
+// 	  if (!Modernizr.svg){
+// 	    $('img').each(function() {
+// 	      $(this).attr('src', $(this).attr('src').replace(/\.svg/gi,'.png'));
+// 	    });
+// 	  }
+// 	});
+// }
 function stretchBodyHeight(){
 	var winH=$(window).height();
 	var bodyH=$("body").innerHeight()-84;

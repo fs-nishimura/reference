@@ -254,7 +254,7 @@ hr {
 .flR {
   float: right; }
 
-.clearfix:after, body section .section-wrap ul:after {
+.clearfix:after, body section .section-wrap > ul:after {
   height: 0;
   visibility: hidden;
   content: ".";
@@ -264,7 +264,7 @@ hr {
   line-height: 0;
   overflow: hidden; }
 
-.clearfix, body section .section-wrap ul {
+.clearfix, body section .section-wrap > ul {
   _height: 1px;
   min-height: 1px;
   /*・･*/
@@ -375,7 +375,7 @@ hr {
 /*-------------------------------------------------
 	btn
 -------------------------------------------------*/
-.bg-cover, body section .section-wrap ul li > a div {
+.bg-cover, body section .section-wrap > ul > li > a div {
   background-size: cover;
   background-position: center center; }
 
@@ -630,22 +630,81 @@ body {
       body section .section-wrap h4 {
         font-size: 16px;
         line-height: 1.5; }
-      body section .section-wrap ul li {
+      body section .section-wrap > ul > li {
         float: left;
         width: 30%;
         margin-left: 3%; }
-        body section .section-wrap ul li:first-child, body section .section-wrap ul li:nth-child(4), body section .section-wrap ul li:nth-child(7) {
+        body section .section-wrap > ul > li:first-child, body section .section-wrap > ul > li:nth-child(4), body section .section-wrap > ul > li:nth-child(7) {
           margin-left: 0; }
         @media only screen and (max-width: 479px) {
-          body section .section-wrap ul li {
+          body section .section-wrap > ul > li {
             width: 100%;
             float: none; } }
-        body section .section-wrap ul li > a {
+        body section .section-wrap > ul > li#sp-menu-flex .article-img {
+          display: table;
+          width: 100%; }
+        body section .section-wrap > ul > li#sp-menu-flex .content {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle; }
+        body section .section-wrap > ul > li .sp-menu {
+          position: relative;
+          width: 24px;
+          height: 30px;
+          margin: 0 auto; }
+          body section .section-wrap > ul > li .sp-menu.show li:first-child {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            top: 6px; }
+          body section .section-wrap > ul > li .sp-menu.show li:nth-child(2) {
+            opacity: 0; }
+          body section .section-wrap > ul > li .sp-menu.show li:nth-child(3) {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            top: 6px; }
+          body section .section-wrap > ul > li .sp-menu li {
+            background-color: #333;
+            width: 24px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-transform: rotate(0deg);
+            -webkit-transform-origin: center center;
+            -moz-transform: rotate(0deg);
+            -moz-transform-origin: center center;
+            -o-transform: rotate(0deg);
+            -o-transform-origin: center center;
+            -ms-transform: rotate(0deg);
+            -ms-transform-origin: center center;
+            transition: all 360ms cubic-bezier(0.47, 0, 0.745, 0.715) 0ms;
+            -webkit-transition: all 360ms cubic-bezier(0.47, 0, 0.745, 0.715) 0ms;
+            -moz-transition: all 360ms cubic-bezier(0.47, 0, 0.745, 0.715) 0ms;
+            -ms-transition: all 360ms cubic-bezier(0.47, 0, 0.745, 0.715) 0ms;
+            -o-transition: all 360ms cubic-bezier(0.47, 0, 0.745, 0.715) 0ms; }
+            body section .section-wrap > ul > li .sp-menu li:first-child {
+              top: 0; }
+            body section .section-wrap > ul > li .sp-menu li:nth-child(2) {
+              top: 5px; }
+            body section .section-wrap > ul > li .sp-menu li:nth-child(3) {
+              top: 10px; }
+        body section .section-wrap > ul > li > a {
           display: block;
           width: 100%;
           height: 300px;
           margin-bottom: 1em; }
-          body section .section-wrap ul li > a div {
+          body section .section-wrap > ul > li > a div {
             height: 100%; }
 
 #totop {

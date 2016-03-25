@@ -40,7 +40,7 @@
 		<section id="layout">
 			<div class="section-wrap">
 				<h3>Layout</h3>
-				<ul>
+				<ul class="clickablelist">
 				         	<li>
 		 				<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/top/1.png');"></div></a>
 	              				<h4><a href="javascript:void(0);">Basic</a></h4>
@@ -159,19 +159,6 @@
 	              					</ul>
 	              				</div>
 					</li>
-					<li>
-						<a href="/layout/layout4"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="/layout/layout4">Formal</a></h4>
-					</li>
-					<li>
-						<a href="/layout/layout5"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="/layout/layout5">Formal</a></h4>
-					</li>
-					<li>
-						<a href="/layout/layout6"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="/layout/layout6">Formal</a></h4>
-					</li>
-
 				</ul>
 			</div>
 		</section>
@@ -179,13 +166,22 @@
 			<div class="section-wrap">
 				<h3>Parts</h3>
 				<ul>
-				         	<li>
-		 				<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="javascript:void(0);">Mobile Menu (Flex) </a></h4>
+				         	<li id="sp-menu-flex">
+		 				<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');">
+		 				<div class="content">
+			 				<ul class="sp-menu">
+			 					<li></li>
+			 					<li></li>
+			 					<li></li>
+			 				</ul>
+		 				</div>
+		 					
+		 				</div></a>
+	              				<h4><a href="javascript:void(0);">Mobile Menu (Basic) </a></h4>
 					</li>
 					 <li>
 						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');"></div></a>
-	              				<h4><a href="javascript:void(0);">Mobile Menu (100%)</a></h4>
+	              				<h4><a href="javascript:void(0);">Mobile Menu (Fade)</a></h4>
 					</li>
 					<li>
 						<a href="javascript:void(0);"><div class="article-img" style="background-image:url('/assets/img/common/dummy.png');">Main Slider</div></a>
@@ -220,7 +216,7 @@
 <?php else:  /////////// PCのみ?>
 <?php include ($root_path."/assets/inc/script.php"); ?>
 <?php endif;  /////////// PC・SP振り分け完了?>
-<script src="<?php echo $local_path; ?>/js/top.js"></script>
+<script src="<?php echo $local_path; ?>assets/js/top.js"></script>
 
 
 </body>
